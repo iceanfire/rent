@@ -247,6 +247,22 @@
         box-shadow: var(--shadow);
       }
 
+      .map {
+        overflow: hidden;
+        margin-top: 14px;
+        border: 10px solid rgba(255, 255, 255, 0.62);
+        border-radius: 34px;
+        background: var(--white);
+        box-shadow: var(--shadow);
+      }
+
+      .map iframe {
+        display: block;
+        width: 100%;
+        height: 420px;
+        border: 0;
+      }
+
       .note {
         max-width: 720px;
         margin: 28px auto 0;
@@ -478,6 +494,16 @@
                 on the lower level.
               </p>
             </article>
+          </div>
+
+          <div class="map">
+            <iframe
+              title="Map showing the location near Finsbury Park, London N4 2AY"
+              src="https://www.google.com/maps?q=N4%202AY&z=15&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
           </div>
         </section>
 
