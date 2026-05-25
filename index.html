@@ -37,6 +37,21 @@
         line-height: 1.55;
       }
 
+      .sun {
+        position: fixed;
+        top: 28px;
+        right: 28px;
+        z-index: -1;
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        background: radial-gradient(circle at 50% 45%, #fff6c2 0%, #ffd84d 58%, #ffc107 100%);
+        box-shadow:
+          0 0 40px 16px rgba(255, 216, 77, 0.55),
+          0 0 110px 52px rgba(255, 216, 77, 0.3);
+        pointer-events: none;
+      }
+
       img {
         display: block;
         width: 100%;
@@ -352,6 +367,16 @@
           width: min(100% - 24px, 1080px);
         }
 
+        .sun {
+          top: 18px;
+          right: 18px;
+          width: 64px;
+          height: 64px;
+          box-shadow:
+            0 0 28px 10px rgba(255, 216, 77, 0.5),
+            0 0 70px 34px rgba(255, 216, 77, 0.28);
+        }
+
         .nav {
           flex-wrap: wrap;
         }
@@ -382,6 +407,7 @@
     </style>
   </head>
   <body>
+    <div class="sun" aria-hidden="true"></div>
     <div class="page">
       <header class="topbar">
         <nav class="nav" aria-label="Main navigation">
